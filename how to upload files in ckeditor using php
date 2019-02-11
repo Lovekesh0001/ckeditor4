@@ -1,0 +1,23 @@
+#extract kcfinder zip file
+
+#go to the ckeditor folder open config.js and paste the code
+
+CKEDITOR.editorConfig = function( config ) {
+    config.filebrowserBrowseUrl = '../admin/framework/kcfinder/browse.php?opener=ckeditor&type=files';
+   config.filebrowserImageBrowseUrl = '../admin/framework/kcfinder/browse.php?opener=ckeditor&type=images';
+   config.filebrowserFlashBrowseUrl = '../admin/framework/kcfinder/browse.php?opener=ckeditor&type=flash';
+   config.filebrowserUploadUrl = '../admin/framework/kcfinder/upload.php?opener=ckeditor&type=files';
+   config.filebrowserImageUploadUrl = '../admin/framework/kcfinder/upload.php?opener=ckeditor&type=images';
+   config.filebrowserFlashUploadUrl = '../admin/framework/kcfinder/upload.php?opener=ckeditor&type=flash';
+	// Define changes to default configuration here. For example:
+	// config.language = 'fr';
+	// config.uiColor = '#AADC6E';
+};
+
+#Disable You don't have permissions to browse server. open file in kcfinder/conf/config.php
+// GENERAL SETTINGS
+
+    'disabled' => true,  #replace to false
+    'uploadURL' => "upload",
+    'uploadDir' => "",
+    'theme' => "default",
