@@ -1,0 +1,11 @@
+#in head tag
+<script src="/ckeditor/ckeditor.js"></script>
+
+
+<div class="editor">
+  <label for="exampleInputEmail1"> Content</label>
+  <textarea class="ckeditor" name="f_content" id="noticeMessage" ></textarea>
+</div>
+<script>
+        CKEDITOR.replace( 'f_content' );  #field name
+</script>
